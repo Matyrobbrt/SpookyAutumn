@@ -1,0 +1,3 @@
+@javax.annotation.ParametersAreNonnullByDefault
+@com.mojang.blaze3d.MethodsReturnNonnullByDefault
+package com.matyrobbrt.spookyautumn;
