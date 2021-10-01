@@ -23,7 +23,7 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
 			ShapelessRecipeBuilder.shapeless(block, 1).requires(ingot, 9).unlockedBy("has_item", has(ingot))
 					.save(consumer);
 		});
-		
+
 	}
 
 }
