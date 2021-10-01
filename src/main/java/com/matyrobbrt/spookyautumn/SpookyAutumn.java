@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 import com.matyrobbrt.spookyautumn.common.itemgroup.SpookyAutumnItemGroup;
 import com.matyrobbrt.spookyautumn.core.init.BlockInit;
 import com.matyrobbrt.spookyautumn.core.init.BlockItemInit;
+import com.matyrobbrt.spookyautumn.core.init.FeatureInit;
 import com.matyrobbrt.spookyautumn.core.init.ItemInit;
 
 import net.minecraft.world.item.BlockItem;
@@ -13,6 +14,7 @@ import net.minecraft.world.item.Item;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -38,6 +40,7 @@ public class SpookyAutumn {
 		BlockInit.BLOCKS.register(modBus);
 		ItemInit.ITEMS.register(modBus);
 
+		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
