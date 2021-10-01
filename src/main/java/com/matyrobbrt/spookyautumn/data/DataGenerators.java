@@ -3,6 +3,7 @@ package com.matyrobbrt.spookyautumn.data;
 import com.matyrobbrt.spookyautumn.SpookyAutumn;
 import com.matyrobbrt.spookyautumn.data.common.BlockTagsProvider;
 import com.matyrobbrt.spookyautumn.data.common.ItemTagsProvider;
+import com.matyrobbrt.spookyautumn.data.common.RecipeProvider;
 
 import net.minecraft.data.DataGenerator;
 
@@ -24,6 +25,8 @@ public class DataGenerators {
 		BlockTagsProvider blockTags = new BlockTagsProvider(gen, existingFileHelper);
 		gen.addProvider(blockTags);
 		//gen.addProvider(new ItemTagsProvider(gen, blockTags, existingFileHelper));
+		
+		gen.addProvider(new RecipeProvider(gen));
 	}
 
 }

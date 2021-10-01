@@ -9,11 +9,16 @@ import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import static com.matyrobbrt.spookyautumn.common.itemgroup.SpookyAutumnItemGroup.SPOOKY_AUTUMN;
+
 public class ItemInit {
 
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
 			SpookyAutumn.MOD_ID);
-	
+
+	public static final RegistryObject<Item> SPOOKY_INGOT = register("spooky_ingot",
+			() -> new Item(new Item.Properties().tab(SPOOKY_AUTUMN)));
+
 	public static RegistryObject<Item> register(final String name, final Supplier<? extends Item> sup) {
 		return ITEMS.register(name, sup);
 	}

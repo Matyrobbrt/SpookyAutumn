@@ -7,7 +7,8 @@ import com.google.common.collect.Lists;
 import net.minecraft.world.level.block.Block;
 
 public class BlockItemInit {
-	
-	public static final ArrayList<Block> BLOCKITEM_BLOCKS = Lists.newArrayList(BlockInit.SPOOKY_PUMPKIN.get());
+
+	public static final ArrayList<Block> BLOCKITEM_BLOCKS = Lists.newArrayList(BlockInit.SPOOKY_PUMPKIN.get(),
+			BlockInit.SPOOKY_BLOCK.get());
 
 }

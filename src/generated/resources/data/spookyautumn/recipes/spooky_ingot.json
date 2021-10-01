@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spookyautumn:spooky_block"
+    }
+  ],
+  "result": {
+    "item": "spookyautumn:spooky_ingot",
+    "count": 9
+  }
+}

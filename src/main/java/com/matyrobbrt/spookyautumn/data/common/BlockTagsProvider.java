@@ -17,7 +17,9 @@ public class BlockTagsProvider extends net.minecraft.data.tags.BlockTagsProvider
 	@Override
 	protected void addTags() {
 		tag(Blocks.AXE_MINABLE).add(BlockInit.SPOOKY_PUMPKIN.get());
-		tag(Blocks.WOOD_MINING_LEVEL).add(BlockInit.SPOOKY_PUMPKIN.get());
+		tag(Blocks.PICKAXE_MINABLE).add(BlockInit.SPOOKY_BLOCK.get());
+		
+		tag(Blocks.WOOD_MINING_LEVEL).add(BlockInit.SPOOKY_PUMPKIN.get()).add(BlockInit.SPOOKY_BLOCK.get());
 	}
 
 }

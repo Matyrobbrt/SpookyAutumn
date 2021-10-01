@@ -17,5 +17,8 @@ public class BlockInit {
 
 	public static final RegistryObject<Block> SPOOKY_PUMPKIN = BLOCKS.register("spooky_pumpkin",
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)));
+	
+	public static final RegistryObject<Block> SPOOKY_BLOCK = BLOCKS.register("spooky_block",
+			() -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
 }

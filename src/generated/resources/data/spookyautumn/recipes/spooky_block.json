@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spookyautumn:spooky_ingot"
+    },
+    {
+      "item": "spookyautumn:spooky_ingot"
+    },
+    {
+      "item": "spookyautumn:spooky_ingot"
+    },
+    {
+      "item": "spookyautumn:spooky_ingot"
+    },
+    {
+      "item": "spookyautumn:spooky_ingot"
+    },
+    {
+      "item": "spookyautumn:spooky_ingot"
+    },
+    {
+      "item": "spookyautumn:spooky_ingot"
+    },
+    {
+      "item": "spookyautumn:spooky_ingot"
+    },
+    {
+      "item": "spookyautumn:spooky_ingot"
+    }
+  ],
+  "result": {
+    "item": "spookyautumn:spooky_block"
+  }
+}
