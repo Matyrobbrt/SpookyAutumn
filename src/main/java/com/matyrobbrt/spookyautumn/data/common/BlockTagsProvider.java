@@ -1,6 +1,8 @@
 package com.matyrobbrt.spookyautumn.data.common;
 
 import com.matyrobbrt.spookyautumn.SpookyAutumn;
+import com.matyrobbrt.spookyautumn.core.init.BlockInit;
+import com.matyrobbrt.spookyautumn.core.init.TagInit.Blocks;
 
 import net.minecraft.data.DataGenerator;
 
@@ -14,7 +16,8 @@ public class BlockTagsProvider extends net.minecraft.data.tags.BlockTagsProvider
 	
 	@Override
 	protected void addTags() {
-		
+		tag(Blocks.AXE_MINABLE).add(BlockInit.SPOOKY_PUMPKIN.get());
+		tag(Blocks.WOOD_MINING_LEVEL).add(BlockInit.SPOOKY_PUMPKIN.get());
 	}
 
 }

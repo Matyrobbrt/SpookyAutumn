@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 
+@SuppressWarnings("unused")
 @Mod.EventBusSubscriber(modid = SpookyAutumn.MOD_ID, bus = Bus.MOD)
 public class DataGenerators {
 	
@@ -22,7 +23,7 @@ public class DataGenerators {
 		
 		BlockTagsProvider blockTags = new BlockTagsProvider(gen, existingFileHelper);
 		gen.addProvider(blockTags);
-		gen.addProvider(new ItemTagsProvider(gen, blockTags, existingFileHelper));
+		//gen.addProvider(new ItemTagsProvider(gen, blockTags, existingFileHelper));
 	}
 
 }

@@ -12,7 +12,10 @@ public class TagInit {
 	public static class Blocks {
 		
 		public static final Tag.Named<Block> PICKAXE_MINABLE = minecraft("mineable/pickaxe");
+		public static final Tag.Named<Block> AXE_MINABLE = minecraft("mineable/axe");
 		
+		public static final Tag.Named<Block> WOOD_MINING_LEVEL = forge("needs_wood_tool");
+		public static final Tag.Named<Block> STONE_MINING_LEVEL = minecraft("needs_stone_tool");
 		public static final Tag.Named<Block> IRON_MINING_LEVEL = minecraft("needs_iron_tool");
 		
 		public static Tag.Named<Block> forge(String path) {
