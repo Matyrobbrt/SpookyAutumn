@@ -8,10 +8,10 @@ import com.matyrobbrt.spookyautumn.core.init.BlockInit;
 import com.matyrobbrt.spookyautumn.core.init.BlockItemInit;
 import com.matyrobbrt.spookyautumn.core.init.FeatureInit;
 import com.matyrobbrt.spookyautumn.core.init.ItemInit;
+import com.matyrobbrt.spookyautumn.core.util.StrippingMap;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
@@ -19,6 +19,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 /**
@@ -52,4 +53,8 @@ public class SpookyAutumn {
 							.setRegistryName(block.getRegistryName()));
 		});
 	}
+
+	public void onLoadComplete(final FMLLoadCompleteEvent event) {
+		StrippingMap.registerStrippables();
+	}	
 }

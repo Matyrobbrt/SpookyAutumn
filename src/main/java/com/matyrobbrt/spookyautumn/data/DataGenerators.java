@@ -2,11 +2,9 @@ package com.matyrobbrt.spookyautumn.data;
 
 import com.matyrobbrt.spookyautumn.SpookyAutumn;
 import com.matyrobbrt.spookyautumn.data.common.BlockTagsProvider;
-import com.matyrobbrt.spookyautumn.data.common.ItemTagsProvider;
 import com.matyrobbrt.spookyautumn.data.common.RecipeProvider;
 
 import net.minecraft.data.DataGenerator;
-
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
