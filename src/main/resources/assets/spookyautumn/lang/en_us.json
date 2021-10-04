@@ -8,5 +8,10 @@
 	"block.spookyautumn.beech_planks": "Beech Planks",
 	"block.spookyautumn.beech_wood": "Beech Wood",
 	"block.spookyautumn.stripped_beech_log": "Stripped Beech Log",
-	"block.spookyautumn.stripped_beech_wood": "Stripped Beech wood"
+	"block.spookyautumn.stripped_beech_wood": "Stripped Beech wood",
+	"block.spookyautumn.hickory_log": "Hickory Log",
+	"block.spookyautumn.hickory_planks": "Hickory Planks",
+	"block.spookyautumn.hickory_wood": "Hickory Wood",
+	"block.spookyautumn.stripped_hickory_log": "Stripped Hickory Log",
+	"block.spookyautumn.stripped_hickory_wood": "Stripped Hickory wood"
 }

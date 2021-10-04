@@ -12,6 +12,8 @@ public class BlockItemInit {
 			BlockInit.SPOOKY_BLOCK.get(), BlockInit.MAPLE_LOG.get(), BlockInit.MAPLE_PLANKS.get(),
 			BlockInit.MAPLE_WOOD.get(), BlockInit.STRIPPED_MAPLE_LOG.get(), BlockInit.STRIPPED_MAPLE_WOOD.get(),
 			BlockInit.BEECH_LOG.get(), BlockInit.BEECH_PLANKS.get(), BlockInit.BEECH_WOOD.get(),
-			BlockInit.STRIPPED_BEECH_LOG.get(), BlockInit.STRIPPED_BEECH_WOOD.get());
+			BlockInit.STRIPPED_BEECH_LOG.get(), BlockInit.STRIPPED_BEECH_WOOD.get(),
+			BlockInit.HICKORY_LOG.get(), BlockInit.HICKORY_PLANKS.get(), BlockInit.HICKORY_WOOD.get(),
+			BlockInit.STRIPPED_HICKORY_LOG.get(), BlockInit.STRIPPED_HICKORY_WOOD.get());
 
 }

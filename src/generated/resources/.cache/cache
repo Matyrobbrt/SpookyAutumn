@@ -1,6 +1,6 @@
 4b972481f8ac9a59f0493cb070e1ad7c76132397 data/forge/tags/blocks/needs_wood_tool.json
-67bf3ffe25bf8a2ba0204cc7be51210040f9e8dd data/minecraft/tags/blocks/logs.json
-bd1376c7d121925c311826c781560b4c3d2f6ffc data/minecraft/tags/blocks/mineable/axe.json
+fd8d477d8a3c8fec9b1e30cb6772fbfd9ee27d6b data/minecraft/tags/blocks/logs.json
+5e7cba74a592bd78ae47dad626121e8899bbcac9 data/minecraft/tags/blocks/mineable/axe.json
 dc7f87b1113b97ce82f4adcd27e170793b1ec615 data/minecraft/tags/blocks/mineable/pickaxe.json
 08db6e5f4be48ef7f6784fd4ce0382aae8c0d14f data/spookyautumn/advancements/recipes/spookyautumn/spooky_block.json
 dd2d353b23ace3fa1e6847416b7417fede71e4a7 data/spookyautumn/advancements/recipes/spookyautumn/spooky_ingot.json

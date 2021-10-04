@@ -28,6 +28,7 @@ public class BlockInit {
 	
 	
 	//Trees
+	//Maple
 	public static final RegistryObject<Block> MAPLE_LOG = BLOCKS.register("maple_log",
 			() -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
 	
@@ -43,6 +44,7 @@ public class BlockInit {
 	public static final RegistryObject<Block> MAPLE_PLANKS = BLOCKS.register("maple_planks",
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 	
+	//Beech
 	public static final RegistryObject<Block> BEECH_LOG = BLOCKS.register("beech_log",
 			() -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
 	
@@ -57,6 +59,23 @@ public class BlockInit {
 	
 	public static final RegistryObject<Block> BEECH_PLANKS = BLOCKS.register("beech_planks",
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+	
+	//Hickory
+	public static final RegistryObject<Block> HICKORY_LOG = BLOCKS.register("hickory_log",
+			() -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+	
+	public static final RegistryObject<Block> HICKORY_WOOD = BLOCKS.register("hickory_wood",
+			() -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+	
+	public static final RegistryObject<Block> STRIPPED_HICKORY_LOG = BLOCKS.register("stripped_hickory_log",
+			() -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
+	
+	public static final RegistryObject<Block> STRIPPED_HICKORY_WOOD = BLOCKS.register("stripped_hickory_wood",
+			() -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+	
+	public static final RegistryObject<Block> HICKORY_PLANKS = BLOCKS.register("hickory_planks",
+			() -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+	
 	
 	
 	
