@@ -2,6 +2,12 @@
   "replace": false,
   "values": [
     "spookyautumn:maple_log",
-    "spookyautumn:stripped_maple_wood"
+    "spookyautumn:maple_wood",
+    "spookyautumn:stripped_maple_log",
+    "spookyautumn:stripped_maple_wood",
+    "spookyautumn:beech_log",
+    "spookyautumn:beech_wood",
+    "spookyautumn:stripped_beech_log",
+    "spookyautumn:stripped_beech_wood"
   ]
 }

@@ -1,7 +1,5 @@
 package com.matyrobbrt.spookyautumn.data.common;
 
-import static com.matyrobbrt.spookyautumn.core.init.BlockInit.MAPLE_LOG;
-import static com.matyrobbrt.spookyautumn.core.init.BlockInit.STRIPPED_MAPLE_WOOD;
 import static com.matyrobbrt.spookyautumn.core.init.TagInit.Blocks.LOGS;
 
 import com.matyrobbrt.spookyautumn.SpookyAutumn;
@@ -10,7 +8,6 @@ import com.matyrobbrt.spookyautumn.core.init.TagInit.Blocks;
 import com.matyrobbrt.spookyautumn.data.maps.TagMaps;
 
 import net.minecraft.data.DataGenerator;
-
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 public class BlockTagsProvider extends net.minecraft.data.tags.BlockTagsProvider {
@@ -28,7 +25,7 @@ public class BlockTagsProvider extends net.minecraft.data.tags.BlockTagsProvider
 
 		tag(Blocks.WOOD_MINING_LEVEL).add(BlockInit.SPOOKY_PUMPKIN.get()).add(BlockInit.SPOOKY_BLOCK.get());
 
-		tag(LOGS).add(MAPLE_LOG.get()).add(STRIPPED_MAPLE_WOOD.get());
+		tag(LOGS).add(TagMaps.LOGS);
 
 	}
 
