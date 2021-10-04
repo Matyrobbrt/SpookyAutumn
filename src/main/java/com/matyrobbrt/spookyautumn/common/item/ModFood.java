@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -19,23 +20,38 @@ public class ModFood extends Item {
 		super(pProperties);
 	}
 
+	/**
+	 * Add an effect instance to the food
+	 * @param effect the effect to add
+	 * @return
+	 */
 	public ModFood addEffect(MobEffectInstance effect) {
 		this.effects.add(effect);
 		return this;
 	}
 
+	public ArrayList<MobEffect> getMobEffects() {
+		ArrayList<MobEffect> mobEffects = new ArrayList<>();
+		this.effects.forEach(effect -> {
+			mobEffects.add(effect.getEffect());
+		});
+		return mobEffects;
+	}
+
+	public boolean playerNeedsAddingEffect(Player player) {
+		boolean needsAdding = false;
+		for (int i = 0; i <= getMobEffects().size() - 1; i++) {
+			if (!player.hasEffect(getMobEffects().get(i)))
+				needsAdding = true;
+		}
+		return needsAdding;
+	}
+
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
 
-		/**
-		this.effects.forEach(effect -> {
-			if (!pPlayer.hasEffect(effect.getEffect()))
-				pPlayer.getItemInHand(pUsedHand).getOrCreateTag().putBoolean("noCancel", true);
-		});
-
-		if (pPlayer.getItemInHand(pUsedHand).getOrCreateTag().getBoolean("noCancel"))
+		if (!playerNeedsAddingEffect(pPlayer))
 			return InteractionResultHolder.fail(pPlayer.getItemInHand(pUsedHand));
-		**/
 
 		return super.use(pLevel, pPlayer, pUsedHand);
 	}

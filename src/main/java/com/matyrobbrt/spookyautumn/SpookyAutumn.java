@@ -4,14 +4,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.matyrobbrt.spookyautumn.common.itemgroup.SpookyAutumnItemGroup;
-import com.matyrobbrt.spookyautumn.core.init.BlockInit;
+import com.matyrobbrt.spookyautumn.core.Registries;
 import com.matyrobbrt.spookyautumn.core.init.BlockItemInit;
 import com.matyrobbrt.spookyautumn.core.init.FeatureInit;
-import com.matyrobbrt.spookyautumn.core.init.ItemInit;
 import com.matyrobbrt.spookyautumn.core.util.StrippingMap;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
@@ -39,10 +39,7 @@ public class SpookyAutumn {
 	public SpookyAutumn() {
 		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-		BlockInit.BLOCKS.register(modEventBus);
-		LOGGER.info("Blocks Loaded");
-		ItemInit.ITEMS.register(modEventBus);
-		LOGGER.info("Items Loaded");
+		Registries.init(modEventBus);
 		
 		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
 		MinecraftForge.EVENT_BUS.register(this);
