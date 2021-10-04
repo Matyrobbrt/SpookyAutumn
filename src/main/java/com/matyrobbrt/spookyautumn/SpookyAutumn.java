@@ -32,17 +32,22 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod("spookyautumn")
 @Mod.EventBusSubscriber(modid = SpookyAutumn.MOD_ID, bus = Bus.MOD)
 public class SpookyAutumn {
+	
 	public static final String MOD_ID = "spookyautumn";
 	public static final Logger LOGGER = LogManager.getLogger();
 
 	public SpookyAutumn() {
-		IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
+		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-		BlockInit.BLOCKS.register(modBus);
-		ItemInit.ITEMS.register(modBus);
-
+		BlockInit.BLOCKS.register(modEventBus);
+		LOGGER.info("Blocks Loaded");
+		ItemInit.ITEMS.register(modEventBus);
+		LOGGER.info("Items Loaded");
+		
 		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
 		MinecraftForge.EVENT_BUS.register(this);
+		
+		//modEventBus.addListener(this::onLoadComplete);
 	}
 
 	@SubscribeEvent
