@@ -47,7 +47,7 @@ public class SpookyAutumn {
 		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
 		MinecraftForge.EVENT_BUS.register(this);
 		
-		//modEventBus.addListener(this::onLoadComplete);
+		modEventBus.addListener(this::onLoadComplete);
 	}
 
 	@SubscribeEvent
