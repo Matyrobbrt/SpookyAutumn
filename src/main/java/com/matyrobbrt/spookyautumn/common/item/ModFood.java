@@ -13,7 +13,7 @@ import net.minecraft.world.level.Level;
 
 public class ModFood extends Item {
 
-	public ArrayList<MobEffectInstance> effects;
+	public ArrayList<MobEffectInstance> effects = new ArrayList<>();
 
 	public ModFood(Properties pProperties) {
 		super(pProperties);
@@ -27,6 +27,7 @@ public class ModFood extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
 
+		/**
 		this.effects.forEach(effect -> {
 			if (!pPlayer.hasEffect(effect.getEffect()))
 				pPlayer.getItemInHand(pUsedHand).getOrCreateTag().putBoolean("noCancel", true);
@@ -34,6 +35,7 @@ public class ModFood extends Item {
 
 		if (pPlayer.getItemInHand(pUsedHand).getOrCreateTag().getBoolean("noCancel"))
 			return InteractionResultHolder.fail(pPlayer.getItemInHand(pUsedHand));
+		**/
 
 		return super.use(pLevel, pPlayer, pUsedHand);
 	}

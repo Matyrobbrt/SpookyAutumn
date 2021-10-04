@@ -18,6 +18,11 @@ public class TagInit {
 		public static final Tag.Named<Block> STONE_MINING_LEVEL = minecraft("needs_stone_tool");
 		public static final Tag.Named<Block> IRON_MINING_LEVEL = minecraft("needs_iron_tool");
 		
+		public static final Tag.Named<Block> LOGS = minecraft("logs");
+		public static final Tag.Named<Block> LOGS_THAT_BURN = minecraft("logs_that_burn");
+		public static final Tag.Named<Block> LEAVES = minecraft("leaves");
+		public static final Tag.Named<Block> SAPLINGS = minecraft("saplings");
+		
 		public static Tag.Named<Block> forge(String path) {
 			return BlockTags.bind(new ResourceLocation("forge", path).toString());
 		}

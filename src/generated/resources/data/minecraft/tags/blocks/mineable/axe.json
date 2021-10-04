@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "spookyautumn:spooky_pumpkin"
+    "spookyautumn:spooky_pumpkin",
+    "spookyautumn:maple_log",
+    "spookyautumn:maple_planks",
+    "spookyautumn:maple_wood",
+    "spookyautumn:stripped_maple_log",
+    "spookyautumn:stripped_maple_wood"
   ]
 }

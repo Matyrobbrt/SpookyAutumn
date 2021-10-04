@@ -9,6 +9,7 @@ import net.minecraft.world.level.block.Block;
 public class BlockItemInit {
 
 	public static final ArrayList<Block> BLOCKITEM_BLOCKS = Lists.newArrayList(BlockInit.SPOOKY_PUMPKIN.get(),
-			BlockInit.SPOOKY_BLOCK.get());
+			BlockInit.SPOOKY_BLOCK.get(), BlockInit.MAPLE_LOG.get(), BlockInit.MAPLE_PLANKS.get(),
+			BlockInit.MAPLE_WOOD.get(), BlockInit.STRIPPED_MAPLE_LOG.get(), BlockInit.STRIPPED_MAPLE_WOOD.get());
 
 }
