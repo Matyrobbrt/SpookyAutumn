@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "apookyautumn:block/autumn_birch_sapling"
+  }
+}
