@@ -1,7 +1,7 @@
 {
 	"variants": {
 		"": {
-			"model": "refinement:block/maple_planks"
+			"model": "spookyautumn:block/maple_planks"
 		}
 	}
 }
