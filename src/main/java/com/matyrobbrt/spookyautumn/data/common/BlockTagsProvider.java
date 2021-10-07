@@ -1,6 +1,9 @@
 package com.matyrobbrt.spookyautumn.data.common;
 
 import static com.matyrobbrt.spookyautumn.core.init.TagInit.Blocks.LOGS;
+import static com.matyrobbrt.spookyautumn.core.init.TagInit.Blocks.PLANKS;
+import static com.matyrobbrt.spookyautumn.core.init.TagInit.Blocks.LEAVES;
+import static com.matyrobbrt.spookyautumn.core.init.TagInit.Blocks.LOGS_THAT_BURN;
 
 import com.matyrobbrt.spookyautumn.SpookyAutumn;
 import com.matyrobbrt.spookyautumn.core.init.BlockInit;
@@ -26,6 +29,9 @@ public class BlockTagsProvider extends net.minecraft.data.tags.BlockTagsProvider
 		tag(Blocks.WOOD_MINING_LEVEL).add(BlockInit.SPOOKY_PUMPKIN.get()).add(BlockInit.SPOOKY_BLOCK.get());
 
 		tag(LOGS).add(TagMaps.LOGS);
+		tag(LOGS_THAT_BURN).add(TagMaps.BURNABLE_LOGS);
+		tag(PLANKS).add(TagMaps.PLANKS);
+		tag(LEAVES).add(TagMaps.LEAVES);
 
 	}
 

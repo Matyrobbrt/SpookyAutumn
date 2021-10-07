@@ -3,6 +3,7 @@ package com.matyrobbrt.spookyautumn;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.matyrobbrt.spookyautumn.client.render.RenderLayers;
 import com.matyrobbrt.spookyautumn.common.itemgroup.SpookyAutumnItemGroup;
 import com.matyrobbrt.spookyautumn.core.Registries;
 import com.matyrobbrt.spookyautumn.core.init.BlockItemInit;
@@ -11,7 +12,6 @@ import com.matyrobbrt.spookyautumn.core.util.StrippingMap;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
@@ -19,6 +19,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -59,4 +60,9 @@ public class SpookyAutumn {
 	public void onLoadComplete(final FMLLoadCompleteEvent event) {
 		StrippingMap.registerStrippables();
 	}	
+	
+	@SubscribeEvent
+	public static void clientSetup(final FMLClientSetupEvent event) {
+		RenderLayers.setRenderLayers();
+	}
 }
